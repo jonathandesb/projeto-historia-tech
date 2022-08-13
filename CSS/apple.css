@@ -1,0 +1,203 @@
+
+@charset "UTF-8";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+@font-face {
+    font-family: "SF-Pro-Text-Regular";
+    src: url("../assets/fontes/SF-Pro-Text-Regular.otf") format("opentype");
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SF-Pro-Display-Semibold";
+    src: url("../assets/fontes/SF-Pro-Display-Semibold.otf") format("opentype");
+    font-weight: normal;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+:root {
+    --cor0: #f5f5f5;
+    --cor1: #d8d8d8;
+    --cor2: #c9c9c9;
+    --cor3: #584C59;
+    --cor4: #211826;
+    --cor5: #8257E5;
+    --cor6: #202024;
+
+
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destaque: 'Bebas Neue', cursive;
+    --font-android: "Android", cursive;
+    --font-apple: "SF-Pro-Display-Semibold", cursive;
+    --font-apple-destaque: "SF-Pro-Text-Regular", cursive;
+}
+
+
+
+body  {
+    font-family: "Fira Code", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background-color: var(--cor0);
+}
+:root {
+    --cor0: #8257E5;
+    --cor1: #202024;
+}
+
+
+header {
+    
+    width: 100%;
+    height: 50px;
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0px;
+  
+}
+
+
+header > h1 {
+    color: white;
+    font-size: 15px;
+    margin-left: 20px;
+}
+
+nav {
+    padding: 10px;
+    display: inline-block;
+
+}
+
+main {
+    background-color: var(--cor0);
+    text-align: center;
+    border-radius: 2px;
+    min-width: 300px;
+    max-width: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.493);
+    margin-bottom: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav > a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 5px;
+    transition-duration: 0.5s;
+}
+
+nav > a:hover {
+    background-color: var(--cor2);
+    color: var(--cor4);
+}
+
+
+
+main h1 {
+    color: var(--cor4);
+    font-family: var(--font-destaque);
+    font-weight: normal;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+
+
+main h2 {
+    font-family: var(--font-apple);
+    color: var(--cor4);
+    font-size: 22px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+    text-indent: 8px;
+    font-weight: normal;
+}
+
+main p > a {
+    background-color: var(--cor2);
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--cor4);
+}
+main a:hover {
+    text-decoration: underline;
+}
+
+main p {
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 32px;
+    font-size: 16px;
+}
+
+main strong {
+color: var(--cor4);
+font-weight: bold;
+padding: 2px;
+
+}
+
+main img {
+    width: 100%;
+}
+
+main img.pequena {
+    max-width: 500px;
+    display: block;
+    margin: auto;
+}
+
+div.video {
+    background-color: var(--cor1);
+
+    margin: 0px -20px 50px 0px;
+    padding: 20px;
+    position: relative;
+    padding-bottom: 60%;
+}
+
+div.video > iframe {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+
+footer {
+    background-color: var(--cor4);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
